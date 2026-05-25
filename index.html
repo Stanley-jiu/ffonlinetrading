@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F&F Online Trading</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; }
+        header { background: white; color: black; padding: 20px; text-align:left; display:flex; align-items: center; justify-content: space-between; }
+        nav a { color: black; margin: 0 15px; text-decoration: none; font-size: 20px; }
+        .hero { padding: 30px; text-align: center; background: lightgray; }
+        .services { display: flex; justify-content: center; gap: 20px; padding: 40px; }
+        .card { background: white; padding: 20px; width: 250px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+        footer { background: #343a40; color: white; text-align: center; padding: 15px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="display: flex; align-items: center;">
+        <img src="ffonline_logo.jpeg" alt="" width="220" height="200">
+        
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ffonline_services.html">Services</a>
+        <a href="ffonline_aboutus.html">About</a>
+        <a href="ffonline_contactus.html">Contact</a>
+    </nav>
+</header>
+
+
+<div class="hero"> 
+    <p style="font-size: 20px;"><b>Welcome to F&F Online Trading</b> <br><br>
+        We bring fun, learning, and happiness to every child through safe and affordable toys.</p>
+</div>
+
+<style>
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 40px;
+    }
+    
+    .product-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .product-card img {
+        max-width:"100%"; 
+        max-height:"100%";
+        object-fit: cover;
+    }
+    
+    .product-name {
+        font-size: 16px;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+    
+    .product-price {
+        color: green;
+        margin-bottom: 15px;
+    }
+    </style>
+    
+    <section>
+        <h2 style="color:darkblue; font-size: 30px; text-align: center;" ><b>New Arrivals</b></h2>
+        <div class="products">
+            
+            <div class="product-card">
+                <img src="Car_toys.jpeg" alt="" width="270" height="200">
+                <div class="product-name"><br>Car toys</div>
+                <p>Electric Car Toys</p>
+                <div class="product-price">RM599</div>
+            </div>
+    
+            <div class="product-card">
+                <img src="alphabet_puzzle.jpg" alt="" width="270" height="200" >
+                <div class="product-name"><br>Educational Toys</div>
+                <p>Alphabet Puzzle</p>
+                <div class="product-price">RM59</div>
+            </div>
+
+            <div class="product-card">
+                <img src="Bubble.jpg" alt="" width="270" height="250">
+                <div class="product-name"><br>Outdoor Toys</div>
+                <p>Bubbles Gun, Water Gun, BB Gun</p>
+                <div class="product-price">RM39 - RM 129</div>
+            </div>
+    
+            <div class="product-card">
+                <img src="Colouring.jpeg" alt="" width="270" height="250">
+                <div class="product-name"><br>Arts & Crafts</div>
+                <p>Colouring Set</p>
+                <div class="product-price">RM29</div>
+            </div>
+    
+            <div class="product-card">
+                <img src="Piano.jpg" alt="" width="270" height="230">
+                <div class="product-name"><br>Musical Toys</div><br>
+                <p>Piano Toys</p>
+                <div class="product-price">RM189</div>
+            </div>
+    
+            <div class="product-card">
+                <img src="Lego.jpg" alt="" width="270" height="230">
+                <div class="product-name"><br>Building Blocks</div><br>
+                <p>Lego / Mega Blocks</p>
+                <div class="product-price">RM119</div>
+            </div>
+    
+    
+        </div>
+    </section>
+
+    <!--benefit开头-->
+    <style>
+        .why-section {
+            padding: 60px 20px;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        
+        .why-title {
+            font-size: 34px;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        
+        .why-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 25px;
+            max-width: 900px;
+            margin: auto;
+        }
+        
+        .why-box {
+            flex: 1 1 300px;
+            max-width: 350px;
+            padding: 30px;
+            border-radius: 15px;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        
+        .why-box:hover {
+            transform: translateY(-8px);
+        }
+        
+        /* 不同颜色 */
+        .box1 {
+            grid-column: 1;
+            grid-row: 1;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);;
+        }
+
+        .box2 {
+            grid-column: 2;
+            grid-row: 2;
+            margin-top: 0px; /* 往下错开 */
+            background: linear-gradient(135deg, #fddb92, #d1fdff);
+        }
+
+        .box3 {
+            grid-column: 1;
+            grid-row: 3;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+        }
+        
+        .why-icon {
+            font-size: 35px;
+        }
+        
+        .why-box h3 {
+            margin-top: 15px;
+            font-size: 22px;
+        }
+        
+        .why-box p {
+            margin-top: 15px;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        </style>
+        
+        <section class="why-section">
+            <h2 class="why-title" style=color:darkblue>Why Choose Us?</h2>
+        
+            <div class="why-container">
+        
+                <!-- BOX 1 -->
+                <div class="why-box box1">
+                    <h3 style=color:darkblue><b>High Quality & Safe Toys</b></h3>
+                    <p style="color:rgba(32,32,121,0.537); font-size:18px;">
+                        All of our toys are carefully selected with child safety and durability in mind. 
+                        <br><br>
+                        Parents can shop with confidence knowing their kids are getting safe and fun products.
+                    </p>
+                </div>
+        
+                <!-- BOX 2 -->
+                <div class="why-box box2">
+                    <h3 style=color:darkblue><b>Affordable Prices</b></h3>
+                    <p style="color:rgba(32,32,121,0.537); font-size:18px;">
+                        We provide quality toys at budget-friendly prices for every family. 
+                        <br><br>
+                        Enjoy great value without sacrificing quality or variety.
+                    </p>
+                </div>
+        
+                <!-- BOX 3 -->
+                <div class="why-box box3">
+                    <h3 style=color:darkblue><b>Wide Variety of Choices</b></h3>
+                    <p style="color:rgba(32,32,121,0.537); font-size:18px;" >
+                        From educational toys to fun collectibles, we have something for children of all ages.
+                        <br><br>
+                        Our store makes it easy to find the perfect toy for every child.
+                    </p>
+                </div>
+        
+            </div>
+        </section>
+        <!--benefit的结尾-->
+
+        <!--Testimonial开头-->
+        <style>
+            .testimonial-section {
+                padding: 60px 20px;
+                background: #f8f9fa;
+                text-align: center;
+            }
+            
+            .testimonial-title {
+                font-size: 32px;
+                margin-bottom: 40px;
+                font-weight: bold;
+            }
+            
+            .slider {
+                max-width: 600px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+            }
+            
+            .slides {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+            
+            .slide {
+                min-width: 100%;
+                box-sizing: border-box;
+                padding: 30px;
+                color: black;
+            }
+            
+            .testimonial-box {
+                background: #f2b5c1;
+                border-radius: 12px;
+                padding: 25px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+            
+            .testimonial-text {
+                font-style: italic;
+                margin-bottom: 15px;
+            }
+            
+            .testimonial-name {
+                font-weight: bold;
+                color: grey;
+            }
+            </style>
+            
+            <section class="testimonial-section">
+                <h2 class="testimonial-title" >What Our Customers Comment...</h2>
+            
+                <div class="slider">
+                    <div class="slides" id="slides">
+            
+                        <!-- Testimonial 1 -->
+                        <div class="slide">
+                            <div class="testimonial-box">
+                                <p class="testimonial-text">“Great quality toys and very fast delivery. My son loves the toy car so much!”</p>
+                                <div class="testimonial-name">— Sarah Lim</div>
+                            </div>
+                        </div>
+            
+                        <!-- Testimonial 2 -->
+                        <div class="slide">
+                            <div class="testimonial-box">
+                                <p class="testimonial-text">“The prices are affordable and there are many cute toys to choose from. Will definitely buy again.”</p>
+                                <div class="testimonial-name">— Daniel Tan</div>
+                            </div>
+                        </div>
+            
+                        <!-- Testimonial 3 -->
+                        <div class="slide">
+                            <div class="testimonial-box">
+                                <p class="testimonial-text">“I bought a puzzle set for my daughter and she enjoys it every day. Very satisfied with the service.”</p>
+                                <div class="testimonial-name">— Amanda Lee</div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+            
+            
+            <script>
+            let index = 0;
+            const slides = document.getElementById("slides");
+            const totalSlides = 3;
+            
+            setInterval(() => {
+                index++;
+                if (index >= totalSlides) {
+                    index = 0;
+                }
+                slides.style.transform = `translateX(-${index * 100}%)`;
+            }, 3500);
+            </script>
+            <!--Testimonial结尾-->
+
+
+
+<section id="contact" style="text-align:center; padding:30px;">
+    <h2>Contact Us</h2>
+    <p>Email: ffonlinetrading@outlook.com</p>
+    <p>Phone: 011-59050578</p>
+</section>
+
+<footer>
+    Copyright &copy; Powered by 2026 F&F ONLINE TRADING SDN BHD | <br>
+    202601013022 (1675120-T)
+</footer>
+
+</body>
+</html>
